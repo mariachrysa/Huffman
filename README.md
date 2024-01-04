@@ -1,5 +1,5 @@
  @mainpage README huffman
- @author Maria Chrysanthou       ID: 1123114
+ @author Maria Chrysanthou     
  @section Introduction
  
  The Huffman coding implementation is a command-line program for data compression and decompression. It offers four main functionalities through different command-line options: probability calculation for characters in a sample text file (-p), Huffman code generation based on probabilities (-s), file encoding using Huffman codes (-e), and file decoding (-d). The program employs modular design, with separate files handling probability calculation, tree node structures, encoding and decoding processes. It features a convenient Makefile for compilation, simplifying the build process. Overall, it's a tool for lossless data compression and decompression using the Huffman coding algorithm.
