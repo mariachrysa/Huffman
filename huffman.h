@@ -5,7 +5,7 @@
  * the flow of the program. It also provides the printUsage function for displaying correct command-line usage.
  * Additionally, the HuffmanOptions structure is defined to store input/output filenames and options.
  * 
- * @author Maria Chrysanthou    ID: 1123114
+ * @author Maria Chrysanthou   
  * @date 18/11/2023
  * @bug No known bugs
  */
