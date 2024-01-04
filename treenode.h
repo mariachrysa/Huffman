@@ -8,7 +8,7 @@
  * declarations for reading probabilities from a file, encoding files, and decoding files, 
  * printing arrays and generating and printing Huffman codes.
  * 
- * @author Maria Chrysanthou    ID: 1123114
+ * @author Maria Chrysanthou   
  * @date 21/11/2023
  * @bug No known bugs
  */
