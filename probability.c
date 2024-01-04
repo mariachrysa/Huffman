@@ -4,7 +4,7 @@
  * getting the Frequencies, calculating the probabilities and implementing
  * the P command, as well as Input/Output helper functions.
  * 
- * @author Maria Chrysanthou    ID: 1123114
+ * @author Maria Chrysanthou   
  * @date 19/11/2023
  * @bug No known bugs
  */
