@@ -2,7 +2,7 @@
  * @file probability.h
  * @brief Header file containing declarations for probability calculations and file I/O.
  * 
- * @author Maria Chrysanthou    ID: 1123114
+ * @author Maria Chrysanthou 
  * @date 19/11/2023
  * @bug No known bugs
  */
