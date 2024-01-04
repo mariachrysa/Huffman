@@ -1,0 +1,4 @@
+<map id="MinHeap" name="MinHeap">
+<area shape="rect" id="node1" title="Structure representing a min&#45;heap for Huffman tree construction. It includes information about the si..." alt="" coords="11,97,91,124"/>
+<area shape="rect" id="node2" href="$structMinHNode.html" title="Structure representing a node in the min&#45;heap used for building the Huffman tree." alt="" coords="5,7,96,33"/>
+</map>

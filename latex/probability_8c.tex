@@ -1,0 +1,151 @@
+\hypertarget{probability_8c}{}\doxysection{probability.\+c File Reference}
+\label{probability_8c}\index{probability.c@{probability.c}}
+
+
+Implementation file for probability calculations such as getting the Frequencies, calculating the probabilities and implementing the P command, as well as Input/\+Output helper functions.  
+
+
+{\ttfamily \#include \char`\"{}probability.\+h\char`\"{}}\newline
+Include dependency graph for probability.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{probability_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{probability_8c_afa1809d54e704dcd5f6dd205518b5364}{initialize\+Prob}} (\mbox{\hyperlink{structProbabilityData}{Probability\+Data}} $\ast$data)
+\begin{DoxyCompactList}\small\item\em This function initializes the frequencies array of the \mbox{\hyperlink{structProbabilityData}{Probability\+Data}} structure. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{probability_8c_afeecb190e17816e4e30e9b21cf899067}{get\+Freq}} (FILE $\ast$f, \mbox{\hyperlink{structProbabilityData}{Probability\+Data}} $\ast$data)
+\begin{DoxyCompactList}\small\item\em This function reads characters from the provided file, updates the character frequencies in the \mbox{\hyperlink{structProbabilityData}{Probability\+Data}} structure, and returns the frequency of a specific character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{probability_8c_a40a06ac91f23cce60d4ca538dcd51ff8}{calculate\+Probabilities}} (FILE $\ast$input, FILE $\ast$output)
+\begin{DoxyCompactList}\small\item\em This function calculates the probabilities of characters based on their frequencies and writes the results to the specified output file. \end{DoxyCompactList}\item 
+FILE $\ast$ \mbox{\hyperlink{probability_8c_a534ec4b8ad9af7e9723b3fb441922fff}{read\+File}} (const char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em This function takes a file name as input, attempts to open the file, and returns a file pointer. It exits the program with an error message if the file cannot be opened. \end{DoxyCompactList}\item 
+FILE $\ast$ \mbox{\hyperlink{probability_8c_a2b2fab9c3a9b7e44f70b3b36828c4cd4}{write\+File}} (const char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em This function takes a file name as input, attempts to open the file for writing, and returns a file pointer. It exits the program with an error message if the file cannot be opened. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{probability_8c_a9c12b343ee77fb30baa05850cfd7e1e0}{implementP}} (const char $\ast$in, const char $\ast$out)
+\begin{DoxyCompactList}\small\item\em Implements the \textquotesingle{}p\textquotesingle{} option. It takes the paths to the input data file and the desired output file, calculates character probabilities, and writes the results to the specified output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation file for probability calculations such as getting the Frequencies, calculating the probabilities and implementing the P command, as well as Input/\+Output helper functions. 
+
+\begin{DoxyAuthor}{Author}
+Maria Chrysanthou ID\+: 1123114 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+19/11/2023 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000003}{Bug}}]No known bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{probability_8c_a40a06ac91f23cce60d4ca538dcd51ff8}\label{probability_8c_a40a06ac91f23cce60d4ca538dcd51ff8}} 
+\index{probability.c@{probability.c}!calculateProbabilities@{calculateProbabilities}}
+\index{calculateProbabilities@{calculateProbabilities}!probability.c@{probability.c}}
+\doxysubsubsection{\texorpdfstring{calculateProbabilities()}{calculateProbabilities()}}
+{\footnotesize\ttfamily void calculate\+Probabilities (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{input,  }\item[{FILE $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+This function calculates the probabilities of characters based on their frequencies and writes the results to the specified output file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & File pointer to the input file containing character frequencies. \\
+\hline
+{\em output} & File pointer to the output file for writing probabilities. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probability_8c_afeecb190e17816e4e30e9b21cf899067}\label{probability_8c_afeecb190e17816e4e30e9b21cf899067}} 
+\index{probability.c@{probability.c}!getFreq@{getFreq}}
+\index{getFreq@{getFreq}!probability.c@{probability.c}}
+\doxysubsubsection{\texorpdfstring{getFreq()}{getFreq()}}
+{\footnotesize\ttfamily unsigned int get\+Freq (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{f,  }\item[{\mbox{\hyperlink{structProbabilityData}{Probability\+Data}} $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+This function reads characters from the provided file, updates the character frequencies in the \mbox{\hyperlink{structProbabilityData}{Probability\+Data}} structure, and returns the frequency of a specific character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & File pointer to the input file. \\
+\hline
+{\em data} & Pointer to the \mbox{\hyperlink{structProbabilityData}{Probability\+Data}} structure to store character frequencies. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The frequency of the last character read. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{probability_8c_a9c12b343ee77fb30baa05850cfd7e1e0}\label{probability_8c_a9c12b343ee77fb30baa05850cfd7e1e0}} 
+\index{probability.c@{probability.c}!implementP@{implementP}}
+\index{implementP@{implementP}!probability.c@{probability.c}}
+\doxysubsubsection{\texorpdfstring{implementP()}{implementP()}}
+{\footnotesize\ttfamily void implementP (\begin{DoxyParamCaption}\item[{const char $\ast$}]{in,  }\item[{const char $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+Implements the \textquotesingle{}p\textquotesingle{} option. It takes the paths to the input data file and the desired output file, calculates character probabilities, and writes the results to the specified output file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Path to the input data file. \\
+\hline
+{\em out} & Path to the output file for writing probabilities. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probability_8c_afa1809d54e704dcd5f6dd205518b5364}\label{probability_8c_afa1809d54e704dcd5f6dd205518b5364}} 
+\index{probability.c@{probability.c}!initializeProb@{initializeProb}}
+\index{initializeProb@{initializeProb}!probability.c@{probability.c}}
+\doxysubsubsection{\texorpdfstring{initializeProb()}{initializeProb()}}
+{\footnotesize\ttfamily void initialize\+Prob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structProbabilityData}{Probability\+Data}} $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+This function initializes the frequencies array of the \mbox{\hyperlink{structProbabilityData}{Probability\+Data}} structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the \mbox{\hyperlink{structProbabilityData}{Probability\+Data}} structure to be initialized. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probability_8c_a534ec4b8ad9af7e9723b3fb441922fff}\label{probability_8c_a534ec4b8ad9af7e9723b3fb441922fff}} 
+\index{probability.c@{probability.c}!readFile@{readFile}}
+\index{readFile@{readFile}!probability.c@{probability.c}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily FILE$\ast$ read\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+This function takes a file name as input, attempts to open the file, and returns a file pointer. It exits the program with an error message if the file cannot be opened. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file to be opened. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File pointer to the opened file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{probability_8c_a2b2fab9c3a9b7e44f70b3b36828c4cd4}\label{probability_8c_a2b2fab9c3a9b7e44f70b3b36828c4cd4}} 
+\index{probability.c@{probability.c}!writeFile@{writeFile}}
+\index{writeFile@{writeFile}!probability.c@{probability.c}}
+\doxysubsubsection{\texorpdfstring{writeFile()}{writeFile()}}
+{\footnotesize\ttfamily FILE$\ast$ write\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+This function takes a file name as input, attempts to open the file for writing, and returns a file pointer. It exits the program with an error message if the file cannot be opened. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file to be opened. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File pointer to the opened file for writing. 
+\end{DoxyReturn}

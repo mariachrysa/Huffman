@@ -1,0 +1,6 @@
+<map id="probability.h" name="probability.h">
+<area shape="rect" id="node1" title="Header file containing declarations for probability calculations and file I/O." alt="" coords="57,5,159,32"/>
+<area shape="rect" id="node2" href="$huffman_8h.html" title="Header file which contains declarations for functions and structures related to the Huffman coding pr..." alt="" coords="5,80,93,107"/>
+<area shape="rect" id="node4" href="$probability_8c.html" title="Implementation file for probability calculations such as getting the Frequencies, calculating the pro..." alt="" coords="117,80,219,107"/>
+<area shape="rect" id="node3" href="$huffman_8c.html" title="Huffman coding implementation for data compression and decompression." alt="" coords="6,155,93,181"/>
+</map>

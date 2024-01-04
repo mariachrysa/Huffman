@@ -1,0 +1,45 @@
+\hypertarget{structMinHNode}{}\doxysection{Min\+HNode Struct Reference}
+\label{structMinHNode}\index{MinHNode@{MinHNode}}
+
+
+Structure representing a node in the min-\/heap used for building the Huffman tree.  
+
+
+
+
+{\ttfamily \#include $<$treenode.\+h$>$}
+
+
+
+Collaboration diagram for Min\+HNode\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{structMinHNode__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMinHNode_a61ae2d9cd585f97fd976ef6622fc2faf}\label{structMinHNode_a61ae2d9cd585f97fd976ef6622fc2faf}} 
+char \mbox{\hyperlink{structMinHNode_a61ae2d9cd585f97fd976ef6622fc2faf}{item}}
+\begin{DoxyCompactList}\small\item\em The character or item represented by the node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structMinHNode_a6f3be91ed0c1b93f582c547f8fa2dda4}\label{structMinHNode_a6f3be91ed0c1b93f582c547f8fa2dda4}} 
+double \mbox{\hyperlink{structMinHNode_a6f3be91ed0c1b93f582c547f8fa2dda4}{freq}}
+\begin{DoxyCompactList}\small\item\em The frequency associated with the character or item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structMinHNode_ad9cd10952a0545f9e867cc542dd63418}\label{structMinHNode_ad9cd10952a0545f9e867cc542dd63418}} 
+struct \mbox{\hyperlink{structMinHNode}{Min\+HNode}} $\ast$ \mbox{\hyperlink{structMinHNode_ad9cd10952a0545f9e867cc542dd63418}{left}}
+\begin{DoxyCompactList}\small\item\em Pointer to the left child node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structMinHNode_a57da84b397694be033bf1a386b235a43}\label{structMinHNode_a57da84b397694be033bf1a386b235a43}} 
+struct \mbox{\hyperlink{structMinHNode}{Min\+HNode}} $\ast$ \mbox{\hyperlink{structMinHNode_a57da84b397694be033bf1a386b235a43}{right}}
+\begin{DoxyCompactList}\small\item\em Pointer to the right child node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing a node in the min-\/heap used for building the Huffman tree. 
+
+It is used for building the Huffman tree with a min-\/heap approach. It contains information about an item (character), its frequency, and pointers to its left and right child nodes. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{treenode_8h}{treenode.\+h}}\end{DoxyCompactItemize}

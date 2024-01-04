@@ -1,0 +1,6 @@
+<map id="treenode.h" name="treenode.h">
+<area shape="rect" id="node1" title="Header file which defines structures and functions related to tree nodes and Huffman coding...." alt="" coords="59,5,151,32"/>
+<area shape="rect" id="node2" href="$huffman_8h.html" title="Header file which contains declarations for functions and structures related to the Huffman coding pr..." alt="" coords="5,80,93,107"/>
+<area shape="rect" id="node4" href="$treenode_8c.html" title="Implements data structures and functions for Huffman coding using a MinHeap&#45;based binary tree." alt="" coords="117,80,208,107"/>
+<area shape="rect" id="node3" href="$huffman_8c.html" title="Huffman coding implementation for data compression and decompression." alt="" coords="6,155,93,181"/>
+</map>

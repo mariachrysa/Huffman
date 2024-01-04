@@ -1,0 +1,18 @@
+\begin{DoxyAuthor}{Author}
+Maria Chrysanthou ID\+: 1123114 
+\end{DoxyAuthor}
+\hypertarget{index_Introduction}{}\doxysection{Introduction}\label{index_Introduction}
+The Huffman coding implementation is a command-\/line program for data compression and decompression. It offers four main functionalities through different command-\/line options\+: probability calculation for characters in a sample text file (-\/p), Huffman code generation based on probabilities (-\/s), file encoding using Huffman codes (-\/e), and file decoding (-\/d). The program employs modular design, with separate files handling probability calculation, tree node structures, encoding and decoding processes. It features a convenient Makefile for compilation, simplifying the build process. Overall, it\textquotesingle{}s a tool for lossless data compression and decompression using the Huffman coding algorithm.\hypertarget{index_Command-Line}{}\doxysection{Argument Guide}\label{index_Command-Line}
+-\/p $<$sample.\+txt$>$ $<$probfile.\+txt$>$\+: calculates the probabilities of each ASCII character in a \textquotesingle{}sample.\+txt\textquotesingle{} file and prints them to \textquotesingle{}probfile.\+txt\textquotesingle{}
+
+-\/s $<$probfile.\+txt$>$\+: generates Huffman codes for ASCII characters based on their probabilities from \textquotesingle{}probfile.\+txt\textquotesingle{} which are printed both onto the screen and onto an additional \textquotesingle{}codes.\+txt\textquotesingle{} file
+
+-\/e $<$probfile.\+txt$>$ $<$data.\+txt$>$ $<$data.\+txt.\+enc$>$\+: encodes the contents of \textquotesingle{}data.\+txt\textquotesingle{} and writes the encoded data to \textquotesingle{}data.\+txt.\+enc\textquotesingle{} based on the probabilities in \textquotesingle{}probfile.\+txt\textquotesingle{}
+
+-\/d $<$probfile.\+txt$>$ $<$data.\+txt.\+enc$>$ $<$data.\+txt.\+new$>$\+: decodes the contents of the encoded file \textquotesingle{}data.\+txt.\+enc\textquotesingle{} and writes the decoded data to \textquotesingle{}data.\+txt.\+new\textquotesingle{} based on the probabilities in \textquotesingle{}probfile.\+txt\textquotesingle{}\hypertarget{index_How}{}\doxysection{to Use}\label{index_How}
+To use this program you need to open the terminal on your device and\+:
+\begin{DoxyEnumerate}
+\item Type in\+: make all
+\item Run the program with ./huffman followed by the Command-\/\+Line Argument Guide.
+\end{DoxyEnumerate}\hypertarget{index_bugs}{}\doxysection{Known bugs}\label{index_bugs}
+No Known bugs 

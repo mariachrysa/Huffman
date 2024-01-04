@@ -1,0 +1,12 @@
+<map id="huffman.c" name="huffman.c">
+<area shape="rect" id="node1" title="Huffman coding implementation for data compression and decompression." alt="" coords="292,5,379,32"/>
+<area shape="rect" id="node2" href="$huffman_8h.html" title="Header file which contains declarations for functions and structures related to the Huffman coding pr..." alt="" coords="191,80,279,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="304,80,367,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="391,80,461,107"/>
+<area shape="rect" id="node3" href="$treenode_8h.html" title="Header file which defines structures and functions related to tree nodes and Huffman coding...." alt="" coords="24,155,116,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="37,229,103,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="156,229,227,256"/>
+<area shape="rect" id="node6" href="$probability_8h.html" title="Header file containing declarations for probability calculations and file I/O." alt="" coords="140,155,243,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="319,155,395,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="419,155,494,181"/>
+</map>
