@@ -7,7 +7,7 @@
  * The main functionality is encapsulated in the functions defined in this file, and the program
  * follows a modularized structure to promote clarity and reusability.
  * 
- * @author Maria Chrysanthou    ID: 1123114
+ * @author Maria Chrysanthou    
  * @date 18/11/2023
  * @bug No known bugs
  */
